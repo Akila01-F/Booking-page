@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Booking Hotel & Adventures</title>
+    <link rel="stylesheet" href="./new hotel booking 04.css" />
+</head>
+<body>
+   <nav>
+    <section class="nav_logo">Aone Crown</section>
+    <ul class="nav_links">
+        <li class="link"><a href="new hotel project 02.html">Home</a></li>
+        <li class="link"><a href="new hotel branch 02.html">Hotel Branches</a></li>
+        <li class="link"><a href="new hotel restaurant 02.html">Restaurants</a></li>
+        <li class="link"><a href="new hotel adventures 02.html">Adventures</a></li>
+        <li class="link"><a href="new hotel booking 02.html">Booking hotel & Adventures</a></li>
+    </ul>
+   </nav>
+
+   <article class="BKING_bannerR">
+    <main class="booking-h-form">
+        <h2>Make A Reservation For Rooms</h2>
+        <form action="" method="get" id="room_booking form">
+            <label for="cheak-in">check-in date:</label>
+            <input type="date" id="cheak-in" required>
+
+            <label for="cheak-out">check-out date:</label>
+            <input type="date" id="cheak-out" required>
+
+            <label for="adults">Adults:</label>
+            <input type="number" id="adults" min="1" max="10" required>
+
+            <label for="num_kids">No of Kids Above 5 Years:</label>
+            <input type="number" id="num_kids" min="0" max="5">
+
+            <label for="room-type">Select Rooms Types:</label>
+            
+            
+            <fieldset>   
+                <p>
+                    <label for="single room">Singel Room</label>
+                    <input type="checkbox" id="single room" name="logo" value="single room">
+                </p>
+                <p>
+                    <label for="no single rooms">No of single rooms:</label>
+                    <input type="number" name="no single rooms" id="no single rooms" min="0" value="0" >
+                </p> 
+                <p>
+                    <label for="beds1">Add Extra beds:</label>
+                    <input type="number" name="beds1" id="beds1" min="0" value="0" max="20">
+                </p> 
+            </fieldset>    
+            
+                
+            <fieldset>     
+                <p>
+                    <label for="double room">Double Room</label>
+                    <input type="checkbox" id="double room" name="logo" value="double room">
+                </p>
+                <p>
+                    <label for="no double rooms">No of double rooms:</label>
+                    <input type="number" name="no double rooms" id="no double rooms" min="0" value="0">
+                </p> 
+                <p>
+                    <label for="beds2">Add Extra beds:</label>
+                    <input type="number" name="beds2" id="beds2" min="0" value="0" max="20">
+                </p>   
+            </fieldset>
+            
+            
+            <fieldset>  
+                <p>
+                    <label for="triple room">Triple Room</label>
+                    <input type="checkbox" id="triple room" name="logo" value="triple room">
+                </p>
+                <p>
+                    <label for="no triple rooms">No of triple rooms:</label>
+                    <input type="number" name="no triple rooms" id="no triple rooms" min="0" value="0">
+                </p>
+                <p>
+                    <label for="beds3">Add Extra beds:</label>
+                    <input type="number" name="beds3" id="beds3" min="0" value="0" max="20">
+                </p> 
+
+            </fieldset> 
+            
+            
+                <label for="name">Enter Your Name</label>
+                <input type="text" name="name" id="name"  placeholder=" your name here..." required>
+ 
+                <label for="email">Enter Your Email</label>
+                <input type="email" name="email" id="email" placeholder=" your email here..." required>
+                
+                <label for="promocode">Enter Your Promocode</label>
+                <input type="number" name="promocode" id="promocode" placeholder="123">
+           
+
+
+               
+            
+             
+            
+
+            
+                <fieldset id="fieldset-1" >
+                    Current Booking Cost
+                    <p id="output-1"></p>
+                </fieldset>
+
+                
+
+                
+
+            
+
+
+            <button value="Book Now" id="bookNow">Book now</button>
+
+
+        </form>
+    </main>
+
+
+   </article>
+
+   <article class="BKING_bannerR">
+    <main class="booking-h-form">
+        <h2>Make A Reservation For Adventures</h2>
+        <form action="" method="get" id="adv_booking form">
+            <label for="cheak-in24">Date:</label>
+            <input type="date" id="cheak-in24" required>
+
+            <label for="cheak-time">No. Of Hours:</label>
+            <input type="number" name="cheak-time" id="cheak-time" placeholder=" Hours" required value="1">
+
+            <label for="name-adv">Enter Your Name:</label>
+            <input type="text" name="name-adv" id="name-adv"  placeholder=" your name here...">
+
+            <label for="email-adv">Enter Your Email:</label>
+            <input type="email" name="email-adv" id="email-adv" placeholder=" your email here...">
+
+            <label for="phnumber-adv">Enter Your Phone Number:</label>
+            <input type="number" name="phnumber-adv" id="phnumber-adv" placeholder="+94-xxxxxxxx">
+
+            <label for="nationalityadvent">Nationality:</label>
+            <select name="nationalityadvent" id="nationalityadvent" required>
+                <option value="">select one</option>
+                <option value="local">Local</option>
+                <option value="foreign">Foreign</option>
+            </select>
+            
+            
+                        
+
+            <label for="adultsL">Adults:</label>
+            <input type="number" id="adultsL" min="1" max="10">
+
+
+            <label for="kidsL">Kids (above 5 years):</label>
+            <input type="number" id="kidsL" min="0" max="10">
+
+            <label for="room-typeadven">Adventure type:</label>
+            
+            <fieldset>
+            <p>
+                <label for="diving">Diving</label>
+                <input type="checkbox" id="diving" name="adving" value="diving">
+            </p>
+            </fieldset>
+
+            <label for="room-typeguide">If in need for a guide during the diving session:</label>
+            <fieldset>
+                <p>
+                    <label for="divingadults">Adults</label>
+                    <input type="checkbox" id="divingadults" name="guideadults" value="divingadults">
+                </p>
+                <p>
+                    <label for="adultsno">number of adults:</label>
+                    <input type="number" name="adultsno" id="adultsno" min="0" value="0" max="20">
+                </p> 
+            </fieldset>
+            <fieldset>
+                <p>
+                    <label for="divingkids">Kids</label>
+                    <input type="checkbox" id="divingkids" name="guidekids" value="divingkids">
+                </p>
+                <p>
+                    <label for="kidsno">number of kids:</label>
+                    <input type="number" name="kidsno" id="kidsno" min="0" value="0" max="20">
+                </p> 
+            </fieldset>
+
+            <fieldset id="fieldset-22" >
+                Current Booking Cost
+                <p id="output-22"></p>
+            </fieldset>
+
+            
+
+
+            
+            
+            <button value="Book Nowadv" id="bookNowAdv" onclick="openPopup()">Book now</button>
+            <section class="popupad" id="popadvent">
+                <h2>Thank You</h2>
+                <p>Your details has been successfully submitted</p>
+                
+                <fieldset id="popup-44">
+                    Final Booking For Diving
+                    <p id="output-44"></p>
+                    <button type="button" id="bookNowAdvf" onclick="closePopup()">OK</button>
+                </fieldset>
+                
+            </section>
+            
+
+
+        </form>
+    </main>
+    <section class="nameffff">
+        <h2>
+            Overall Booking
+        </h2>
+    </section>
+
+    <section class="Fineloutput">
+        <fieldset id="summery">
+            <p id="finalbooking"></p>
+        </fieldset>
+
+    </section>
+
+    <section class="favo">
+        <section>
+            <input type="button" id="checkLp" value="Check Loyalty Points">
+            <input type="button" id="addFav" value="Add to favourite">
+
+        </section>
+    
+    </section>
+
+
+   </article>
+
+   
+
+
+
+   <footer class="footer">
+    <section class="section_container footer_container">
+        <section class="footer_l_col">
+            <h3>Aone Crown</h3>
+            <p>
+                Best Luxury Hotel
+            </p>
+            <p>
+                
+            </p>
+        </section>
+        <section class="footer_l_col">
+            <h4>company</h4>
+            <p>About Us</p>
+            <p>Offers</p>
+            <p>Room & suites</p>
+            <p>Terms and conditions</p>
+            <p>Privacy policy</p>
+        </section>
+        <section class="footer_l_col">
+            <h4>Follow Us</h4>
+            <p>Facebook</p>
+            <p>Instgram</p>
+            <p>Twitter</p>
+        </section>
+        <section class="footer_l_col">
+            <h4>Contact Us</h4>
+            <p>425, River side, Galle,Sri Lanka</p>
+            <p>+94814368488</p>
+            <p>info@aonecrown.com</p>
+        </section>
+    </section>
+    <section class="footer_bar">
+        
+    </section>
+  </footer>
+  <script src="./new hotel booking 04.js"></script>
+  
+
+
+
+
+
+</body>
+</html>   
